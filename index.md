@@ -1,7 +1,16 @@
+---
+layout: default
+---
+
 # Welcome to My Blog
 
 ## Latest Posts
 
+<ul class="post-list">
 {% for post in site.posts %}
-  - [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%Y-%m-%d" }}
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+  </li>
 {% endfor %}
+</ul>
