@@ -190,8 +190,8 @@ li {
 
 .post-meta {
   color: var(--text-color);
-  opacity: 0.8;
-  font-size: 0.95em;
+  opacity: 0.7;
+  font-size: 0.9em;
   margin: 1em 0 2em 0;
 }
 
@@ -200,12 +200,11 @@ li {
 }
 
 .category, .tag {
-  display: inline-block;
-  padding: 2px 8px;
-  margin: 0 4px;
-  background-color: var(--code-bg);
-  border-radius: 3px;
-  font-size: 0.9em;
+  display: inline;
+  margin: 0 6px 0 0;
+  font-size: 0.95em;
+  color: var(--text-color);
+  opacity: 0.7;
 }
 
 /* ============================================
