@@ -17,12 +17,14 @@
 
   <!-- Header -->
   <header>
-    <h1 class="site-title">
-      <a href="{{ '/' | relative_url }}">{{ site.title | default: "FuYang's Blog" }}</a>
-    </h1>
-    {% if site.description %}
-    <p class="site-description">{{ site.description }}</p>
-    {% endif %}
+    <div class="container">
+      <h1 class="site-title">
+        <a href="{{ '/' | relative_url }}">{{ site.title | default: "FuYang's Blog" }}</a>
+      </h1>
+      {% if site.description %}
+      <p class="site-description">{{ site.description }}</p>
+      {% endif %}
+    </div>
   </header>
 
   <!-- Main Content -->
@@ -31,8 +33,10 @@
   </main>
 
   <!-- Footer -->
-  <footer style="margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border-color); opacity: 0.7; font-size: 0.9em;">
-    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title | default: "FuYang's Blog" }}. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title | default: "FuYang's Blog" }}. All rights reserved.</p>
+    </div>
   </footer>
 
   <!-- Theme Switcher Script -->
